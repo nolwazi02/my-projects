@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shecodes homepage</title>
+    <style>
+      body {
+        background: #f8f5ff;
+      }
+
+      h1 {
+        color: purple;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: #05020e;
+        font-weight: 400;
+      }
+      ul {
+        padding: 0px;
+        text-align: center;
+      }
+      li {
+        display: block;
+        max-width: 400px;
+        text-align: center;
+        margin: 10px auto;
+        transition: all 250ms ease-in-out;
+      }
+      li:a {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+        float: left;
+      }
+      li:hover {
+        background-color: #eff0cb;
+        cursor: pointer;
+      }
+      h3 {
+        display: block;
+        font-size: 1.7em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      h3 {
+        text-align: center;
+      }
+      button {
+        color: #885df1;
+        padding: 15px 20px;
+        margin: 30px auto;
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #272044;
+        border-radius: 25px;
+        transition: all 250ms ease-in-out;
+      }
+      button:hover {
+        background: #9972f3;
+        color: blue;
+        cursor: pointer;
+        box-shadow: #05020e 0.2cm 0.2cm 0.2cm 0.2cm;
+      }
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-fomit: mononspace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>☀</h1>
+    <h1>Currently 21℃ in Tokyo</h1>
+    <h2 style="font-family: verdana">13℃/ <strong>23℃</strong></h2>
+
+    <div>
+      <ul>
+        <li>
+          <h3>🌧 Tomorrow</h3>
+          <p style="font-family: courier">10℃/<strong>23℃</strong></p>
+        </li>
+        <li>
+          <h3>⛅ Saturday</h3>
+          <p style="font-family: courier">15℃/<strong>17℃</strong></p>
+        </li>
+        <li>
+          <h3>☀ Sunday</h3>
+          <p style="font-family: courier">25℃/<strong>28℃</strong></p>
+        </li>
+      </ul>
+      <button>Change City</button>
+      <p>coded by nolwazi mdakane</p>
+    </div>
+
+    <script>
+      function apply() {
+        let weather = prompt("What is the weather?");
+        let location = prompt("Where are you?");
+
+        if (weather >= 0) {
+          let heading = document.querySelector("h1");
+          heading.innerHTML = "Current " + weather + " ℃ in " + location;
+          alert("😄 Current " + weather + "℃ in  " + location);
+        } else {
+          alert("🥶 Current " + weather + "  " ℃ in+ location);
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    
+    </script>
+  </body>
+</html>

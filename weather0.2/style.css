@@ -1,0 +1,30 @@
+h1, h2 {text-align: center;
+    font-size: 34px;
+    
+    }
+h2 {
+    color: blueviolet;
+}
+.update {
+    text-emphasis: none;
+}
+.learning { font-family: Arial;
+text-align: center;}
+h4 { font-family: Arial Narrow; 
+text-align: center;
+}
+.photo:hover {background-color: blueviolet;}
+.photo {
+    display: block;
+    margin:  30px auto;
+    padding: 10px 20px;
+    border: 1px solid #8e31a5;
+    background: white;
+    border-radius: 30px;
+}
+.update { margin: 20px;
+    text-size-adjust: 50px;
+}
+img {
+    align-content: center;
+}
